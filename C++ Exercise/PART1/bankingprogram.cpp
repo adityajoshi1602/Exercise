@@ -1,7 +1,9 @@
+//This is code of banking project where you can enter your account number and you'll get 
+//options to withdraw,deposit and exit optioons 
 #include<iostream>
 #include<ctime>
 using namespace std; 
-
+//class of combining all functions 
 class bank
 {
    
@@ -13,11 +15,9 @@ class bank
     public:
         void welcome();
 
-   
 
-    
-    
 };
+//Function to enter account number  
 void bank::welcome(){
      for (int i=0;i<16;i++){
         cout<<"*"; 
