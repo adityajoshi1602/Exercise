@@ -1,6 +1,6 @@
 #include<iostream>
 #include <ctime>
-using namespace std; 
+using namespace std;
 void compchoice();
 void yourchoice();
 void winner();
@@ -13,6 +13,8 @@ int main (){
     return 0;
 }
 
+//--------------------------------------
+
 char switchsign(int choice)
 {
     string s;
@@ -24,19 +26,21 @@ char switchsign(int choice)
     cout<<s;
 };
 
+//---------------------------------------
 void compchoice(int &comp)
 {
     srand(time(NULL));
     comp=rand()%3 +1;
-    
+
     cout<<"Computer's Choice Is :: ";
     switchsign(comp);
     cout<<"\n";
 };
 
+//----------------------------------------
 void yourchoice(int &ychoice)
 {
-    
+
      for (int i=0;i<16;i++){
         cout<<"*";
     }
@@ -57,6 +61,7 @@ void yourchoice(int &ychoice)
 
 };
 
+//--------------------------------------
 void rockpaperscissors()
 {
     int choice;
@@ -88,6 +93,6 @@ void rockpaperscissors()
     }else if(comp ==3 && ychoice==1){
         cout<<"YOU LOSE !!";
     }
-    
-    
+
+
 };

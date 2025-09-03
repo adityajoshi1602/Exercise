@@ -1,11 +1,11 @@
-//you can use math functions for details you could check www.cplusplus.com site 
-//to see math functions 
+//you can use math functions for details you could check www.cplusplus.com site
+//to see math functions
 
 /*Building calculator using C++*/
 
 #include<iostream>
-using namespace std; 
-//Function of calculator 
+using namespace std;
+//Function of calculator
 int calc(int a,int b)
 {
     char x;
@@ -20,7 +20,7 @@ int calc(int a,int b)
     }
     cout<<"\n";
     cout<<"\n";
-    
+
     cout<<"Enter First Number : ";
     cin>>a;
     cout<<"Enter Second Number : ";
@@ -51,7 +51,7 @@ int calc(int a,int b)
         res=a/b;
         cout<<"Result is : "<<res;
         break;
-        
+
 
     }
     return 0;
@@ -59,7 +59,7 @@ int calc(int a,int b)
 
 int main (){
     int a,b;
-   
+
     calc(a,b);
     return 0;
 }

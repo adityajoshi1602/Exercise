@@ -1,12 +1,12 @@
-//This is code of banking project where you can enter your account number and you'll get 
-//options to withdraw,deposit and exit optioons 
+//This is code of banking project where you can enter your account number and you'll get
+//options to withdraw,deposit and exit optioons
 #include<iostream>
 #include<ctime>
-using namespace std; 
-//class of combining all functions 
+using namespace std;
+//class of combining all functions
 class bank
 {
-   
+
     private:
         void showbal();
         void withdraw();
@@ -17,14 +17,14 @@ class bank
 
 
 };
-//Function to enter account number  
+//Function to enter account number
 void bank::welcome(){
      for (int i=0;i<16;i++){
-        cout<<"*"; 
+        cout<<"*";
     }
     cout<<" WELCOME ";
     for (int i=0;i<16;i++){
-        cout<<"*"; 
+        cout<<"*";
     }
     cout<<"\n\n";
     int accnum;
@@ -39,10 +39,10 @@ void bank::welcome(){
     cout<<"4. Exit() "<<"\n";
     cout<<"Choice :: ";
     cin>>choice;
-    
+
         if (choice<5){
         switch(choice){
-            
+
             case 1:
             showbal();break;
             case 2:
@@ -56,9 +56,12 @@ void bank::welcome(){
         }
 
 };
+
+//------------------------------------
+
 void bank::showbal()
 {
-    
+
     cout<<"Your Available Balance Is : "<<avlbal<<"\n\n";
     for(int j=0;j<15;j++){
         cout<<"*";
@@ -71,12 +74,15 @@ void bank::showbal()
 
 
 };
+
+//-------------------------------------
+
 void bank::depo()
 {
     int depoamt;
     cout<<"Enter Amount You Want To Deposite : ";
     cin>> depoamt;
-   
+
 
     cout<<"Your Amount Deposited Is : "<<depoamt<<"\n\n";
     for(int j=0;j<15;j++){
@@ -88,15 +94,15 @@ void bank::depo()
     }
     cout<<"\n";
 
-    
 };
+
+//--------------------------------------
+
 void bank::withdraw()
 {
     int withdraw;
     cout<<"Enter Amount You Want To Withdraw : ";
     cin>>withdraw;
-    
-  
 
     cout<<"Your Amount To Withdraw  Is : "<<withdraw<<"\n\n";
     for(int j=0;j<15;j++){
@@ -107,15 +113,15 @@ void bank::withdraw()
         cout<<"*";
     }
     cout<<"\n";
-    
-      
 
 };
+
+//--------------------------------------
 
 int main (){
 
     bank SBI;
     SBI.welcome();
-    
+
     return 0;
 }
