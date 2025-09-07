@@ -91,7 +91,3 @@ void rockpaperscissors()
 
 
 };
-int main(){
-    rockpaperscissors();
-    return 0;
-}
