@@ -75,19 +75,23 @@ void rockpaperscissors()
     compchoice(comp);
     if(comp==ychoice){
         cout<<"DRAW !!";
-    }else if(comp ==1 && ychoice==3){
+    }else if(comp ==3 && ychoice==1){
         cout<<"YOU WON !!";
-    }else if(comp ==2 && ychoice==1){
-        cout<<"YOU WON !!";
-    }else if(comp ==3 && ychoice==2){
+    }else if(comp ==2 && ychoice==3){
         cout<<"YOU WON !!";
     }else if(comp ==1 && ychoice==2){
+        cout<<"YOU WON !!";
+    }else if(comp ==1 && ychoice==3){
         cout<<"YOU LOSE !!";
-    }else if(comp ==2 && ychoice==3){
+    }else if(comp ==3 && ychoice==2){
         cout<<"YOU LOSE !!";
-    }else if(comp ==3 && ychoice==1){
+    }else if(comp ==2 && ychoice==1){
         cout<<"YOU LOSE !!";
     }
 
 
 };
+int main(){
+    rockpaperscissors();
+    return 0;
+}
