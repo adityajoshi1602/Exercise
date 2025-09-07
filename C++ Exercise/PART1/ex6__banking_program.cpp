@@ -118,10 +118,3 @@ void bank::withdraw()
 
 //--------------------------------------
 
-int main (){
-
-    bank SBI;
-    SBI.welcome();
-
-    return 0;
-}

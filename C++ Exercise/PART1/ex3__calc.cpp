@@ -57,9 +57,4 @@ int calc(int a,int b)
     return 0;
 }
 
-int main (){
-    int a,b;
-
-    calc(a,b);
-    return 0;
-}
+//-------------------------------------------------------

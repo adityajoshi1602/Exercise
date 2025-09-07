@@ -7,11 +7,6 @@ void winner();
 void rockpaperscissors();
 char switchsign(int choice);
 
-int main (){
-    rockpaperscissors();
-
-    return 0;
-}
 
 //--------------------------------------
 
